@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Services from "./components/Services";
+import Blogs from "./components/Blogs";
+import Contactus from "./components/Contactus";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,8 +15,8 @@ export default function Home() {
           className="w-full absolute top-0 left-0 -z-10 h-full object-cover"
         />
         <div className="w-full absolute left-0 -z-10 h-full bg-black/70 object-cover top-0"></div>
-        <div className="flex p-10 backdrop-blur-[px] flex-col gap-[40px] w-full items-center">
-          <h1 className="text-[42px] font-[700] text-white max-w-[800px] text-center leading-10">
+        <div className="flex py-28 backdrop-blur-[px] flex-col gap-[10px] w-full items-center">
+          <h1 className="text-[52px] font-[700] text-white max-w-[800px] text-center leading-[60px]">
             Harvest Guardians: Empowering Agriculture Heroes
           </h1>
           <span className="max-w-[800px] text-[16px] text-center text-white font-[400] leading-5">
@@ -93,6 +96,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Blogs/>
+
+      <Contactus/>
+      <Footer/>
     </main>
   );
 }
